@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bomberman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="hud">
+        <div id="timer">Timer: <span id="timer-value">0:00</span></div>
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="lives">Lives: <span id="lives-value">3</span></div>
+      </div>
+    </div>
+    <div id="pauseMenu" class="hidden">
+      <div class="button-container">
+        <button id="continueButton">GO</button>
+        <button id="restartButton">New Game</button>
+      </div>
+    </div>
+    <div id="gameOverMenu" class="menu" style="display: none">
+      <h1>Game Over</h1>
+      <!-- <button id="restartGameButton">Restart</button> -->
+      <button id="newGameButton">New Game</button>
+    </div>
+    <div id="winMenu" class="menu" style="display: none">
+      <h1>Congratulations!You win!</h1>
+      <!-- <button id="winRestartButton">Restart</button> -->
+      <button id="winNewGameButton">New Game</button>
+    </div>
+
+    <script type="module" src="main.js" defer></script>
+  </body>
+</html>
